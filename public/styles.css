@@ -1,204 +1,33 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap";
-
-:root {
-  --color-green: #50fa7b;
-  --color-myblue: #2c7ee92a;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: none;
 }
 
 body {
-  background:#282a36;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
+  background-color: #2448e7a1;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
+  background-color: white;
+  width: 100%;
   padding: 32px;
-  border-bottom: 1px solid #333;
-  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .links {
-  text-align: center;
+  font-size: 22px;
+  line-height: 32px;
+}
+/* .links a + a, aqui aplica o estilo apenas a partir do segundo link (Nesse caso no link Members)*/
+.links a + a {
+  margin-left: 32px;
 }
 
 .links a {
-  color: white;
-  font-size: 18px;
-  line-height: 28px;
-  margin: 0 16px;
   text-decoration: none;
-}
-
-.links a:hover {
-  color: var(--color-green);
-  transition: color 400ms;
-}
-
-#wrapper {
-  text-align: center;
-  padding: 32px;
-}
-
-#wrapper img {
-  border-radius: 50%;
-  border: 3px solid var(--color-green);
-  margin-bottom: 32px;
-  height: 300px;
-}
-
-#wrapper h1 {
-  font-size: 42px;
-  line-height: 52px;
-  font-weight: bold;
-}
-
-#wrapper h2 {
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
-  margin-top: 8px;
-  opacity: 0.8;
-}
-
-#wrapper p {
-  max-width: 500px;
-  margin: 32px auto;
-  font-size: 24px;
-  line-height: 34px;
-}
-#wrapper p a {
-  color: var(--color-green);
-}
-
-#links-footer a {
-  border-bottom: 1px solid var(--color-green);
-}
-
-/*==== CARDS ====*/
-.cards {
-  max-width: 800px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  text-align: justify;
-}
-
-.card {
-  background-color: var(--color-myblue);
-  display: grid;
-  cursor: pointer;
-}
-
-.cards_image_container {
-  width: 100%;
-}
-
-.cards_image_container img {
-  width: 100%;
-}
-
-.card_content,
-.card_info {
-  padding: 24px;
-  
-}
-
-.card_info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-.card_price {
-  background-color: var(--color-myblue);
-  filter: brightness(90%);
-  padding: 5px 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-/*==== MODAL ====*/
-.modal-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal {
-  background-color: white;
-  width: 90%;
-  height: 95%;
-  margin: 5vh auto;
-  position: relative;
-}
-
-.modal .close-modal {
-  color: black;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  cursor: pointer;
-}
-
-/*==== MODAL.ACTIVE ====*/
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-/*==== Iframe ====*/
-iframe {
-  width: 100%;
-  height: 95%;
-  position: absolute;
-  top: 5%;
-}
-
-/*==== FEATURED ====*/
-.featured-wrapper.cards_image_container {
-  position: relative;
-}
-
-.featured {
-  position: absolute;
-  background: #4e9f3f;
-  color: #111;
-  padding: 2px 8px;
-  left: 5px;
-  border-radius: 16px;
-  top: -10px
-}
-
-/*==== VIDEO PAGE ====*/
-.video {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.video .card {
-  cursor: initial;
-}
-
-.cards_video_container {
-  position: relative;
-  width: 100%;
-  padding-top: 62.5%;
-}
-
-.cards_video_container iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
 }
