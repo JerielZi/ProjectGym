@@ -1,3 +1,6 @@
+const fs = require('fs') // modulo do node.js que trabalha com ficheiros(fs-file system)
+const data = require('./data.json')
+
 //Create
 exports.post = function(req, res) {
     //Estrutura de validação dos dados antes de enviar os dados para a BD
@@ -9,7 +12,30 @@ exports.post = function(req, res) {
         return res.send('Please, fill all the fields!')
       }
     }
+    let {avatar_url, birth, name, gender, services} = req.body
+
+    //Tratamento dos dados
+    birth = Date.parse(birth)
+    const created_at = Date.now()
+    const id = Number(data.instructors.length + 1)
+
+    //Organizando os dados que estamos a enviar para o data.json
+    data.instructors.push({
+      id,
+      avatar_url,
+      name,
+      birth,
+      gender,
+      services,
+      created_at
+    }) 
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+      if (err) return res.send("Error with the file!")
+
+      return res.redirect("/instructors")
+    })
   
-   return res.send(req.body)
+   //return res.send(req.body)
   
 }

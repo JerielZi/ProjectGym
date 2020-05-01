@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Jeriel Zinga",
+      "birth": 782611200000,
+      "gender": "M",
+      "services": "Musculação e Crossfit",
+      "created_at": 1588341780970
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "Paula",
+      "birth": 963100800000,
+      "gender": "F",
+      "services": "Crossfit",
+      "created_at": 1588341922156
+    }
+  ]
+}
