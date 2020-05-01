@@ -1,6 +1,27 @@
 const fs = require('fs') // modulo do node.js que trabalha com ficheiros(fs-file system)
 const data = require('./data.json')
 
+//Show
+exports.show = function(req, res) {
+  const { id } = req.params
+
+  const foundInstructor = data.instructors.find(function(instructor) {
+     return id == instructor.id
+  })
+
+  if (!foundInstructor) return res.send("Instructor not found!")
+
+  const instructor = {
+    ...foundInstructor,
+    age: "", 
+    gender: "",
+    services: "",
+    created_at: "",
+  }
+
+  return res.render("instructors/show", {instructor})
+}
+
 //Create
 exports.post = function(req, res) {
     //Estrutura de validação dos dados antes de enviar os dados para a BD
