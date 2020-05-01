@@ -4,6 +4,9 @@ const routes = require('./routes')
 
 const server = express()
 
+//Responsável por fazer o o req.body nas routes.js funcionar.
+server.use(express.urlencoded({extended: true}))
+
 server.use(express.static('public'))
 server.use(routes)
 
