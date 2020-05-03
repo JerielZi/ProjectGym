@@ -1,5 +1,6 @@
 const fs = require('fs') // modulo do node.js que trabalha com ficheiros(fs-file system)
 const data = require('./data.json')
+const { age } = require('./utils')
 
 //Show
 exports.show = function(req, res) {
@@ -13,10 +14,9 @@ exports.show = function(req, res) {
 
   const instructor = {
     ...foundInstructor,
-    age: "", 
-    gender: "",
-    services: "",
-    created_at: "",
+    age: age(foundInstructor.birth), 
+    services: foundInstructor.services.split(","),
+    created_at: new Intl.DateTimeFormat("pt-PT").format(foundInstructor.created_at)
   }
 
   return res.render("instructors/show", {instructor})
