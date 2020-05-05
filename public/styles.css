@@ -146,8 +146,7 @@ header {
 }
 
 /* FORM */
-
-input {
+input, select {
   width: 100%;
   outline: none;
   color: #555;
@@ -261,7 +260,7 @@ tbody tr td:last-child a,
 td:last-child {
   text-align: center;
 }
-/* Para a tabela serviços...Ainda preciso mexer */
+/* Para a tabela serviços...Ainda preciso mexer
 .table-service {
   padding: 8px 16px;
   background-color: var(--secondary-color);
@@ -272,6 +271,6 @@ td:last-child {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
-}
+} */
 
 

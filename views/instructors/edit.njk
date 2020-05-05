@@ -6,7 +6,7 @@
 
   <section 
     class="avatar" 
-    style="background: url(https://source.unsplash.com/collection/8353395/500x500) no-repeat center center /cover" >
+    style="background: url({{instructor.avatar_url}}) no-repeat center center /cover" >
   </section>
 
   <section class="details">
@@ -34,9 +34,16 @@
 
   </section>
 
-  
 </div>
 
-
+<script>
+      const formDelete = document.querySelector("#form-delete")
+      formDelete.addEventListener("submit", function(event) {
+        const confirmation = confirm("Deseja Deletar?")
+        if (!confirmation) {
+          event.preventDefault()
+        }
+      })
+</script>
 
 {% endblock content %}

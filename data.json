@@ -1,24 +1,29 @@
 {
-  "members": [],
-  "instructors": [
+  "members": [
     {
-      "id": 2,
+      "id": 1,
       "avatar_url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Paula",
-      "birth": 963100800000,
+      "email": "paula@dfed.com",
+      "birth": 838080000000,
       "gender": "F",
-      "services": "Crossfit, Jump Rope",
-      "created_at": 1588341922156
+      "blood": "AB+",
+      "weight": "60",
+      "height": "163"
     },
     {
-      "id": 3,
+      "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Eduardo",
-      "birth": 735696000000,
-      "gender": "M",
-      "services": "Musculação, Crossfit",
-      "created_at": 1588512245176
-    },
+      "name": "Maria",
+      "email": "maria@dfdff.com",
+      "birth": 1201132800000,
+      "gender": "F",
+      "blood": "B-",
+      "weight": "65",
+      "height": "163"
+    }
+  ],
+  "instructors": [
     {
       "id": 4,
       "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
@@ -27,6 +32,15 @@
       "gender": "M",
       "services": "Musculação, Crossfit, Jump Rope",
       "created_at": 1588512325163
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Paula",
+      "birth": 825033600000,
+      "gender": "F",
+      "services": "Musculação, Crossfit",
+      "created_at": 1588715560604
     }
   ]
 }
