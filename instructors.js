@@ -2,6 +2,11 @@ const fs = require('fs') // modulo do node.js que trabalha com ficheiros(fs-file
 const data = require('./data.json')
 const { age, date } = require('./utils')
 
+//Index
+exports.index = function(req, res) {
+  return res.render("instructors/index", { instructors: data.instructors })
+}
+
 //Show
 exports.show = function(req, res) {
   const { id } = req.params
