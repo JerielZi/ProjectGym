@@ -2,7 +2,7 @@
   "instructors": [
     {
       "id": 2,
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Paula",
       "birth": 963100800000,
       "gender": "F",
@@ -11,7 +11,7 @@
     },
     {
       "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/8353395/500x500",
+      "avatar_url": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Eduardo",
       "birth": 735696000000,
       "gender": "M",
@@ -20,48 +20,12 @@
     },
     {
       "id": 4,
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Jeriel Zinga",
       "birth": 740966400000,
       "gender": "M",
       "services": "Musculação, Crossfit, Jump Rope",
       "created_at": 1588512325163
-    },
-    {
-      "id": "5",
-      "avatar_url": "http://google.com",
-      "name": "André",
-      "birth": 1029283200000,
-      "gender": "F",
-      "services": "Musculação, Jump Rope, Natação",
-      "created_at": 1588523888609
-    },
-    {
-      "id": 6,
-      "avatar_url": "http://google.com",
-      "name": "Teste",
-      "birth": 631065600000,
-      "gender": "F",
-      "services": "Musculação, Crossfit",
-      "created_at": 1588541706174
-    },
-    {
-      "id": 7,
-      "avatar_url": "http://google.com",
-      "name": "Gevani",
-      "birth": 827712000000,
-      "gender": "M",
-      "services": "Musculação e Crossfit",
-      "created_at": 1588543528429
-    },
-    {
-      "id": 8,
-      "avatar_url": "http://google.com",
-      "name": "Geovani",
-      "birth": 827712000000,
-      "gender": "M",
-      "services": "Musculação, Crossfit",
-      "created_at": 1588543577682
     }
   ]
 }
